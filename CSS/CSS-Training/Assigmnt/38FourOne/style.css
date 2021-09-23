@@ -1,0 +1,142 @@
+/* Assign 1 */
+
+/* body {
+    position: relative;
+    left: 36%;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: #EEE;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #000;
+    counter-increment: num-counter;
+    -webkit-box-shadow: -3px -3px 1px 3px #e91e63, 0px 3px 1px 3px #2196f3;
+    -moz-box-shadow: -3px -3px 1px 3px #e91e63, 0px 3px 1px 3px #2196f3;
+    -o-box-shadow: -3px -3px 1px 3px #e91e63, 0px 3px 1px 3px #2196f3;
+    -ms-box-shadow: -3px -3px 1px 3px #e91e63, 0px 3px 1px 3px #2196f3;
+    box-shadow: -3px -3px 1px 3px #e91e63, 0px 3px 1px 3px #2196f3;
+    
+}
+
+div::before {
+    content: counter(num-counter);
+    position: absolute;
+    left: 10px 20%;
+    background-color: #000;
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+} */
+
+/* ========================================================================= */
+
+/* Assign 2  */
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  margin: 50px 200px;
+  border-top-left-radius: 10px 45px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 10px 45px;
+  border-bottom-left-radius: 100px 40px;
+  -webkit-box-shadow: 2px 2px 7px 3px #aaa inset, 4px 2px 1px 3px #eaeaea inset;
+  -moz-box-shadow: 2px 2px 7px 3px #aaa inset, 4px 2px 1px 3px #eaeaea inset;
+  -ms-box-shadow: 2px 2px 7px 3px #aaa inset, 4px 2px 1px 3px #eaeaea inset;
+  -o-box-shadow: 2px 2px 7px 3px #aaa inset, 4px 2px 1px 3px #eaeaea inset;
+  box-shadow: 2px 2px 7px 3px #aaa inset, 4px 2px 1px 3px #eaeaea inset;
+} */
+
+/* ========================================================================= */
+/* Assign 3 */
+
+.parent {
+  width: 550px;
+  overflow: hidden;
+  position: relative;
+}
+.part1 {
+  background-color: #eee;
+  width: 40%;
+  padding: 4px;
+  margin: 0 18px;
+  display: inline-block;
+}
+.offer {
+  background-color: #03a9f4;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.price {
+  background-color: #ddd;
+  color: #000;
+  text-align: center;
+  width: 90%;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px auto;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.part1::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 265px;
+  background-color: #03a9f4;
+  width: 2px;
+  height: 284px;
+}
+
+.part1::before {
+  z-index: 1;
+  content: "Or";
+  position: absolute;
+  top: 80px;
+  left: 240px;
+  background-color: #03a9f4;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  margin: 48px 10px;
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.part1 .price span {
+  position: absolute;
+  top: 141px;
+  margin: 0 -40px;
+  font-size: 40px;
+}

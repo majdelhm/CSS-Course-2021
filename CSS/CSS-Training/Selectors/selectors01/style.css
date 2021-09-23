@@ -1,0 +1,19 @@
+/* 
+  - Selectors
+    . * => select all element
+    . Element => [div,p,h2,aside,main,articel,....]
+    . Element OtherElement => div p
+    . .class-name
+    . #id-name
+    . .parent .child
+    . .class-one.calss-two => element 3ndo hadol el 2 classes
+    . .calss-name div, .calss-name p => grouping w same styling
+    . Element.calss-name => had el element w 3ndo had el calss
+    . .parent > .child  => Direct Child 
+                        -> y3ne ay element 3ndo .child bs 
+                          ma ykon b2alb she bs ykon b2alb el parent  
+*/
+
+.parent > .child {
+  color: red;
+}

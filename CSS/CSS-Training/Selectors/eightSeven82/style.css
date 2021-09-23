@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Assignment 1 */
+
+/* div.main.red {
+  color: red;
+} */
+
+/* ================================================= */
+
+/* Assignment 2 */
+
+/* .parent > :nth-child(2) {
+  color: red;
+} */
+
+/* ================================================= */
+
+/* Assignment 3 */
+/* 
+.parent .baby:only-child {
+  color: red;
+} */
+
+/* ================================================= */
+
+/* Assignment 4 */
+
+/* div[title="Elzero"]:nth-last-of-type(6),
+div[title="Hello"],
+div[title="HTML"] {
+  color: red;
+} */
+
+/* ================================================= */
+
+/* Assignment 5 */
+
+/* div:nth-of-type(2) > :last-child {
+  color: red;
+} */
+
+/* ================================================= */
+
+/* Assignment 6 */
+
+/* :first-child > :nth-child(3),
+:nth-child(2) > :nth-child(4) {
+  color: red;
+} */
+
+/* ================================================= */
+
+/* Assignment 7 */
+
+/* div:nth-last-of-type(5) > div:nth-child(5) {
+  color: red;
+} */
+
+/* ================================================= */
+
+/* Assignment 8 */
+
+div:not(:first-child):not(h3):not(:last-of-type),
+:nth-child(5) {
+  color: red;
+}

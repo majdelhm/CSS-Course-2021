@@ -1,0 +1,87 @@
+/* Assignment Of Media Queries */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Assignment 1 */
+
+/* @media print {
+  div {
+    font-size: 40px;
+  }
+} */
+
+/* =================================================== */
+/* Assignment 2 */
+
+/* .parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.parent div {
+  background-color: #eee;
+  color: green;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+div span {
+  display: block;
+  color: black;
+  font-size: 16px;
+  margin: 7px;
+}
+
+@media (max-width: 767px) {
+  .parent div {
+    color: black;
+  }
+}
+
+@media (min-width: 768px) {
+  .parent div {
+    width: calc(50% - 10px);
+    color: red;
+  }
+}
+
+@media (min-width: 992px) {
+  .parent div {
+    width: calc(25% - 5px);
+    color: green;
+  }
+} */
+
+/* =================================================== */
+/* Assignment 3 */
+
+.parent {
+  display: grid;
+  
+}
+
+.parent div {
+  background-color: #eee;
+  color: green;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+div span {
+  display: block;
+  color: black;
+  font-size: 16px;
+  margin: 7px;
+}

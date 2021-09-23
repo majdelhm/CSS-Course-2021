@@ -1,0 +1,47 @@
+/* 
+  . Transform 3D 
+    - perspective => el bo3ed bayne w bayn el 3onsor
+    - perspective-origin => mn wan yet7arak left/right  top/bottom
+
+  - perspective
+    1. Css Unit[px,em,rem,%]
+    2. kol ma keber el ra2em kol ma keber el element wel3aks sa7e7
+    3. byen7at lal 3onsor el parent
+
+  - perspective-origin
+    1. Css Unit[px,em,rem]
+    2. %
+    3. Keyword
+      - Top = 0%          Right = 0% 
+      - center = 50%      center = 50%
+      - Bottom = 100%     Left = 100%
+    4. byen7at lal 3onsor el parent
+
+    w akher che ba3te khaseyet el Transform: translate3d/rotate3d aw .... (X-Axis,Y-Axis,Z-Axis);
+
+*/
+
+.ground {
+  background-color: #eee;
+  width: 350px;
+  height: 200px;
+  margin: 160px auto;
+  padding: 10px;
+  perspective: 300px;
+  perspective-origin: right bottom;
+}
+
+.ground div {
+  background-color: #465dc7;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  transition: 3s;
+  transform: translate3d(0, 0, 120px);
+}

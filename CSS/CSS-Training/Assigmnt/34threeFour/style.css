@@ -1,0 +1,127 @@
+/* Assign 1 */
+
+/* div {
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  background-color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div:empty {
+  background-color: #ff0000;
+} */
+
+/* ====================================================================== */
+
+/* Assgn 2 */
+/* 
+div {
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  background-color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+}
+
+div::first-letter {
+  color: #fff;
+  background-color: red;
+  width: 30px;
+} */
+
+/* ====================================================================== */
+
+/* Assgn 3 */
+
+/* 
+p {
+  width: 400px;
+  height: 60px;
+  margin: auto;
+  background-color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  counter-increment: number-count;
+}
+
+p::before {
+  content: attr(data-person);
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  background-color: #eee; 
+  left: -160px;
+  font-weight: bold;
+}
+
+p::after {
+  content: "";
+  position: absolute;
+  background-color: #e91e63;
+  color: white;
+  font-weight: bold;
+  width: 10px;
+  height: 100%;
+  text-align: center;
+  left: -10px;
+  margin-top: -10px;
+}
+
+p::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #e91e63 transparent transparent;
+} */
+
+/* ====================================================================== */
+
+/* Assgn 4 */
+
+p {
+  width: 400px;
+  height: 60px;
+  margin: auto;
+  background-color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  counter-increment: number-count;
+}
+
+p::before {
+  display: inline-block;
+  content: counter(number-count);
+  color: #fff;
+  background-color: #f44336;
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  left: -40px;
+  margin-bottom: -36px;
+  font-weight: bolder;
+  margin-top: -10px;
+}
+p::after {
+  content: "";
+  background-color: #f44336;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  right: -20px;
+  margin-bottom: -36px;
+  margin-top: -10px;
+}

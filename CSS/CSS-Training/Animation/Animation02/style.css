@@ -1,0 +1,38 @@
+/* 
+  - Animation
+    1. Iteraion-count => 3dd Marat el animation [1,2,3,4,....,infinite]
+    2. timing-function => Tare2et 3ard el animation [ease,ease-in-out,linear,..]
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  border-radius: 50%;
+  border: 5px solid #03a9f4;
+  border-left-color: transparent;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

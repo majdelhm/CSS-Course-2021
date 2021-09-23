@@ -1,0 +1,50 @@
+/* 
+  align-content: stretch; => Default Value [flex-start, center, flex-end]
+  byt3aml m3 el mo7tawa ka kol
+*/
+
+.center {
+  background-color: #00f;
+  color: #fff;
+  width: 600px;
+  height: 400px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  align-items: center;
+  align-content: center;
+}
+
+.center div {
+  background-color: #f00;
+  color: #fff;
+  /* float: left;  */
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+/* hon el align-items btt3aml m3ahb ka item wahd wahd */
+.center02 {
+  background-color: #00f;
+  color: #fff;
+  width: 600px;
+  height: 400px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  align-items: center;
+  align-content: center;
+}
+
+.center02 div {
+  background-color: #f00;
+  color: #fff;
+  /* float: left;  */
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}

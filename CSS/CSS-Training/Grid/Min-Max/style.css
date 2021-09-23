@@ -1,0 +1,29 @@
+/* 
+  Grid System
+  -Unit Scale Function
+    1. grid-template-columns: minmax([minValue, maxValue]);
+    2. grid-template-row: minmax([minValue, maxValue]); bs bdon ma akon m7aded width m3ayen
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  background-color: #eee;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.parent div {
+  background-color: #f00;
+  color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}

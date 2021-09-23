@@ -1,0 +1,852 @@
+/* 
+    Comments
+ */
+/* * {
+    box-sizing: border-box;
+} */
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+p {
+    color: #333;
+}
+
+div.div1 {
+    /* Background Color */
+    background-color: green; /* Color Name */
+    background-color: rgb(0 0 255 / 90%); /* Red Green Blue / Alpha Channel */
+    background-color: #ff0000; /* Hexa Code Of Color*/
+
+    /* Background Image */
+    background-image: url("../images/setup.jpg");
+    background-repeat: no-repeat;
+    /* Background Attetment, Position, Size */
+
+    /* background-attachment: fixed;  */
+    /* background-position: left center; */
+    background-size: cover;
+}
+
+aside.aside1 {
+    background-color: #ccc;
+    /* padding: 10px; */ /* All sides padding 10px*/
+    /* padding: 10px 10px 10px 10px; */
+    /* Top Right Bottom Left */
+
+    /*padding: 10px 20px; */
+    /* 10px form Top&Bottom 10px From Right&Left*/
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+main.main1 {
+    background-color: #ccc;
+    /* margin: 30px; */ /* All sides padding 10px*/
+    /* margin: -30px; */ /* Margin can be able Negative Value */
+    /* margin-left: 40%; */
+    width: 70%;
+    margin: auto;
+}
+
+.border1 {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    /* Border */
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: #FF0000; */
+    border: 10px solid #ff0000;
+    /* OutLine ==> zay el border bs m3refeh ma fe da3e asta3mlo */
+    outline: 10px solid #00ff00;
+}
+
+/* Display 
+
+1. block ==> by7term el width, height, margin, Padding
+
+2. inline ==> by7term el width, height, margin, Padding
+
+3. inline-block ==> mix between the two .
+
+*/
+.display1 span {
+    background-color: #eee;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Display: None & Visibility: Hidden */
+
+.visib1,
+.visib2 {
+    background-color: #ff0000;
+    margin: 10px 0;
+}
+
+.visib1 .first {
+    background-color: #00ff00;
+    margin: 10px 0;
+    visibility: hidden; /* 5afa el div bs dalat mwjode bl workflow */
+}
+
+.visib2 .first2 {
+    background-color: #00ff00;
+    margin: 10px 0;
+    display: none; /* Shal El div mn el workflow zay el delet */
+}
+
+.shape1,
+.shape2,
+.shape3 {
+    display: inline-block;
+}
+
+.shape1 {
+    background-color: #eee;
+    margin: 20px;
+    padding: 40px;
+    border: 5px solid #ff0000;
+    outline: 5px solid #000000;
+}
+
+.shape2 {
+    background-color: #eee;
+    margin: 20px;
+    padding: 40px;
+    border-color: #0000ff #00ff00;
+    border-style: solid;
+    border-width: 5px;
+    outline: 5px solid #000000;
+}
+
+.shape3 {
+    background-color: #eee;
+    margin: 20px;
+    padding: 40px;
+    border-color: red green blue yellow;
+    border-style: dashed;
+    border-width: 5px;
+    outline: 5px solid #000000;
+}
+
+.merg {
+    background-color: #eee;
+    width: 400px;
+    display: inline-block;
+}
+
+.visible-ex1,
+.visible-ex2,
+.visible-ex3 {
+    padding: 10px;
+    margin: 10px;
+}
+.visible-ex1 {
+    border-left: 5px solid rgb(255, 6, 151);
+}
+.visible-ex2 {
+    width: 400px;
+    display: block;
+    visibility: hidden;
+}
+.visible-ex3 {
+    border-left: 5px solid rgb(0, 155, 0);
+}
+
+/* EX 13 -> 16 */
+.parent .child .title {
+    color: #ff0000;
+}
+
+.parent .title {
+    color: #0000ff;
+}
+
+.parent p,
+.title {
+    color: #00ff00;
+}
+/* 
+.title {
+    color: #00FF00;
+} */
+
+.t-one,
+.t-two,
+.t-three,
+.t-four {
+    background-color: #9c2626;
+    margin: 10px;
+    padding: 20px;
+    color: #000;
+    max-width: 300px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+/* Text Shadow: H-shadow V-shadow Blur Color */
+/* 
+
+    text align,
+    text indent, 
+    direction, 
+    vertical align, 
+    text decoration, 
+    text transform, 
+    letter spacing,
+    line-height,
+    word spacing,
+    white spacing,
+    word break,
+    text overflow
+
+*/
+.txt1 {
+    background-color: #f9f9f9;
+    text-shadow: 1px 1px 1px #ff0000;
+}
+
+.txt2 {
+    background-color: #f9f9f9;
+    text-align: center;
+    direction: ltr;
+}
+
+.txt2 img {
+    vertical-align: middle;
+}
+
+.txt3 {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: overline;
+    text-transform: lowercase;
+    letter-spacing: 10px;
+}
+
+.txt4 {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.6;
+    word-spacing: 10px;
+}
+.txt5 {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.txt6 {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    word-break: break-word;
+    text-indent: 100px;
+}
+
+/* EX 17 -> 21 */
+
+.shadw {
+    text-transform: capitalize;
+    text-shadow: 1px 1px 0px #ba3329, 1px 2px 0px #2393f1, 1px 3px 0px #942db3;
+}
+
+.onee,
+.twoo,
+.threee {
+    font-family: sans-serif;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+}
+
+.onee {
+    text-transform: uppercase;
+}
+
+.twoo {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
+
+.nrap {
+    background-color: #eeeeee;
+    width: 380px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nrap3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.aa1 {
+    background-color: #009688;
+    color: white;
+    width: 375px;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 5px solid #00514a;
+    text-transform: capitalize;
+}
+
+.inheritance {
+    background-color: #eee;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border: 3px solid;
+    border-color: #942db3;
+}
+
+.inheritance p {
+    border-color: inherit;
+    padding: inherit;
+}
+
+.scale {
+    font-size: 50px;
+}
+.scale span {
+    font-size: 2vw;
+}
+
+.boldd {
+    font-variant: small-caps;
+}
+
+.boldd2 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.grap {
+    cursor: grab;
+}
+/* EX 22 -> 26 */
+.inher {
+    background-color: #fff;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid #ff5722;
+}
+
+.p-inher {
+    background-color: #ddd;
+    text-align: center;
+    padding: inherit;
+    border: inherit;
+}
+
+.fontt1 {
+    font-family: "Open Sans", sans-serif;
+    font-style: oblique;
+}
+
+.fontt2 {
+    font-family: "Cairo", sans-serif;
+}
+
+.fontt3 {
+    font-family: "Jomhuria", cursive;
+}
+
+.skal {
+    font-size: 20px;
+}
+.skal1 {
+    font-size: 3.125rem;
+}
+.skal2 {
+    font-size: 2.5rem;
+}
+.skal3 {
+    font-size: 1.875rem;
+}
+
+/*  Calc and clear and float and opacity */
+.parentt {
+    background-color: #f00;
+    padding: 10px;
+    opacity: 0.5;
+    /* overflow: hidden; */
+}
+
+.parentt div {
+    background-color: #eee;
+    padding: 5px;
+    width: calc((100% - 60px) / 5);
+    float: left;
+    margin: 10px;
+    text-align: center;
+
+    /*  width of content is: 100% 
+        6 spaces 10px * 6 => 60px of content width
+        100% - 60px Available Space 
+        5 Element The Width is: (100% - 60px) / 5
+    */
+}
+
+.clear {
+    clear: both;
+}
+
+/* Z - index */
+
+.zp {
+    background-color: #eee;
+    width: 500px;
+    height: 400px;
+    position: relative;
+}
+
+.indx1,
+.indx2,
+.indx3 {
+    width: 200px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.indx1 {
+    background-color: red;
+    position: absolute;
+    z-index: 3;
+}
+.indx2 {
+    background-color: blue;
+    position: absolute;
+}
+.indx3 {
+    background-color: green;
+}
+
+/* Start Video 34 */
+
+.div22 {
+    width: 300px;
+    height: 200px;
+    background-color: #333;
+}
+
+.div22:empty {
+    border: 10px solid red;
+}
+
+a {
+    background-color: teal;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff5722;
+    background: none;
+}
+
+a:visited {
+    color: chartreuse;
+}
+
+.in1 {
+    border: 10px solid black;
+}
+
+.in1:focus {
+    outline: none;
+    border: 1px solid yellowgreen;
+}
+
+.ch:checked + label {
+    color: rebeccapurple;
+}
+
+.p-elemnt .one span {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.p-elemnt .two::first-letter {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.p-elemnt .three::first-line {
+    font-weight: bold;
+    color: green;
+}
+
+.p-elemnt .four::selection {
+    background-color: #000;
+    color: yellow;
+}
+
+/* ======================================================================= */
+
+/* Vendor Prefixes */
+
+/* .class {
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+    } */
+
+/* ======================================================================= */
+
+/* Border Radius */
+
+.bord-rad {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+/* Box Shadow 
+
+    box-shadow: H-Shadow | V-Shadow | Blur | Spread | Color | Inset ;
+    Note: Can Be Set 4 Shadow In One Code
+        box-shadow: 2px -6px 16px 9px #942ce9, 
+        2px -6px 16px 9px #f00,
+        2px -6px 16px 9px #00F, 
+        2px -6px 16px 9px #080 ;
+*/
+
+.box-shad {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #eee;
+    text-align: center;
+    box-shadow: 2px -6px 16px 9px #942ce9, -27px 10px #2393f1;
+}
+
+/* Box Sizing */ /* Border Box Bt7seb El Padding Wel Margin Wel Border M3 Msa7et El Div */
+
+.box-size {
+    width: 800px;
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.box-size1 {
+    width: 200px;
+    float: left;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}
+
+/* Transition */
+
+.trans {
+    width: 300px;
+    height: 100px;
+    background-color: #eee;
+    box-sizing: border-box;
+    /* transition-duration: 2s;
+    transition-property: width, margin-left;
+    transition-delay: 0.3s;
+    transition-timing-function: ease; */
+    transition: all 2s 0.3s ease-in;
+}
+
+.trans:hover {
+    width: 350px;
+    margin-left: 30px;
+}
+
+/* !Important Declaration */
+.important {
+    /* background-color: #333; */
+    background-color: #f00 !important;
+}
+
+/* Collapsing Margin Only Vertically */
+/* 
+    [1] Only Margin Collaps Vertically
+    [2] Bigger Margin Win
+    [3] Margin Collaps With Elemnts Without AnyThings Between
+    [4] Nesting Does Not Prevent Collapsing
+
+*/
+
+.parent007 {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.parent007 .one007,
+.parent007 .two007 {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.parent007 .one007 {
+    background-color: #ddd;
+}
+
+.parent007 .two007 .up007 {
+    background-color: green;
+    height: 80px;
+    margin-bottom: 40px;
+}
+.parent007 .two007 .down007 {
+    background-color: red;
+    height: 80px;
+    margin-top: 20px;
+}
+
+/* Variables */
+
+/* CSS Variable
+    - Global Variable
+    - Local Variable
+    :root { #Code }
+    - var(VariableName , Fallback Value);
+*/
+
+:root {
+    --mainColor: blue;
+    --mainPadding: 20px;
+}
+
+.variable-color main {
+    background-color: var(--mainColor, red);
+    color: white;
+    padding: var(--mainPadding);
+    width: 400px;
+}
+
+.variable-color article {
+    color: var(--mainColor);
+    padding: var(--mainPadding);
+}
+
+.variable-color aside {
+    width: 400px;
+    border: 1px solid var(--mainColor);
+    padding: var(--mainPadding);
+}
+
+.variable-color a:hover {
+    background-color: var(--mainColor);
+}
+
+/* Filters */
+
+.filt {
+    width: 400px;
+    height: 300px;
+    transition: all 0.6s;
+    filter: grayscale(100%); /* Black & White */
+    /* filter: invert(100%); Bye3kes el sora*/
+    /* filter: blur(5px); Bye3mal Dbab 3l sora*/
+}
+
+.filt:hover {
+    filter: grayscale(0);
+    /* filter: invert(0); */
+    /* filter: blur(0); */
+}
+
+/*  Gradient 
+    linear-gradient( Direction || Angel, Color Stop 1, Color Stop2, ..... );
+*/
+
+.gradientt {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #eee;
+    position: relative;
+}
+
+.gradientt::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    background-image: linear-gradient(
+        to right,
+        red 20%,
+        blue 20%,
+        blue 40%,
+        yellow 40%,
+        yellow 60%,
+        green 60%,
+        green 80%,
+        black 80%,
+        black 90%,
+        rgb(29, 194, 216) 90%
+    );
+}
+
+/* 
+    Caret-Color: red; => lone ma7al ma bbyn enk bdk tekteb ==> zay haweye lal mawke3
+    pointer-event auto; => Default Value || pointer-event: none;
+*/
+
+.caret-pointer input,
+.caret-pointer p {
+    caret-color: darkorange;
+}
+
+.caret-pointer p::selection {
+    background-color: darkorange;
+}
+
+.caret-pointer a.event-pointer {
+    pointer-events: none;
+}
+
+/* Assignmant 54 ==> 56 */
+
+.el0 {
+    box-sizing: border-box;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    border-left: 7px solid #ff5722;
+    border-right: 7px solid #942ce9;
+    position: relative;
+}
+
+.el0::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    background-color: red;
+    background-image: linear-gradient(
+        to right,
+        #ff5722 20%,
+        #2196f3 20%,
+        #2196f3 40%,
+        #4caf50 40%,
+        #4caf50 60%,
+        #e91e63 60%,
+        #e91e63 80%,
+        #942ce9 80%
+    );
+}
+
+.el0::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    background-color: red;
+    background-image: linear-gradient(
+        to right,
+        #ff5722 20%,
+        #2196f3 20%,
+        #2196f3 40%,
+        #4caf50 40%,
+        #4caf50 60%,
+        #e91e63 60%,
+        #e91e63 80%,
+        #942ce9 80%
+    );
+}
+
+.el0::first-letter {
+    color: #f3564a;
+}
+
+.task00 {
+    display: block;
+    width: 600px;
+    padding: 15px;
+    margin: 20px auto;
+    caret-color: #f54c3f;
+    background-color: #eee;
+    /* position: relative; */
+    border: none;
+    outline: none;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #f44336 50%, #009688 50%);
+    border-image-slice: 1;
+
+    /* display: block;
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    caret-color: red;
+    background-color: #eee;
+    border: none;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, #f44336 50%, #009688 50%);
+    border-image-slice: 1;
+    font-size: 30px;
+    line-height: 50px; */
+}
+/* 
+.task00::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right, red 50%, blue 50%, blue 100%);
+} */

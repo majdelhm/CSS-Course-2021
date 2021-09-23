@@ -1,0 +1,250 @@
+/* Assign 1 */
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 1px 0px #ff5722, -4px 1px 0px #03a9f4;
+  border-radius: 50%;
+  color: #ff5722;
+  font-family: Arial;
+} */
+
+/* ===================================================================================================== */
+/* Assign 2 */
+/* 
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.parent div {
+  background-color: #f44336;
+  color: #fff;
+  width: 190px;
+  margin-left: 10px;
+  text-align: center;
+} */
+
+/* ===================================================================================================== */
+/* Assign 3 */
+/* 
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.parent div {
+  background-color: #607d8b;
+  color: #fff;
+  width: 190px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.one {
+  order: 6;
+  align-self: flex-end;
+}
+
+.two {
+  order: 5;
+}
+
+.three {
+  order: 2;
+  align-self: flex-start;
+}
+
+.four {
+  order: 3;
+}
+
+.five {
+  order: 4;
+}
+
+.six {
+  order: 1;
+} */
+
+/* ===================================================================================================== */
+/* Assign 4 */
+/* 
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.parent div {
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.one {
+  align-self: flex-end;
+  height: 100px;
+}
+
+.two {
+  height: 75px;
+  width: 40%;
+}
+
+.three {
+  align-self: flex-end;
+  height: 100px;
+} */
+
+/* ===================================================================================================== */
+/* Assign 5 */
+
+/* .parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.parent div {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  width: 120px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent .one {
+  background-color: #ff9800;
+}
+.parent .two {
+  background-color: #8bc34a;
+  align-self: flex-end;
+}
+.parent .three {
+  background-color: #795548;
+}
+.parent .four {
+  background-color: #b19cd5;
+  order: -1;
+  align-self: flex-end;
+} */
+
+/* ===================================================================================================== */
+/* Assign 6 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --backColor: #ddd;
+}
+
+.page {
+  background-color: #eee;
+  width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* background-color: var(--backColor); */
+  margin: 5px 20px;
+}
+
+header .logo {
+  background-color: var(--backColor);
+  padding: 10px 20px;
+  align-self: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  background-color: var(--backColor);
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+header ul li {
+  padding: 10px 20px;
+  margin-left: 8px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+main .content {
+  background-color: var(--backColor);
+  margin: 7px;
+  flex-basis: 70%;
+  padding: 5px;
+  min-height: 300px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+main .sidebar {
+  background-color: var(--backColor);
+  margin: 7px;
+  flex-basis: 30%;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+footer {
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--backColor);
+  padding: 10px;
+}

@@ -1,0 +1,59 @@
+
+/* Position */
+
+body {
+  height: 5000px;
+  margin: 0;
+  padding: 0
+}
+
+
+div {
+  width: 200px;
+  color: #FFF;
+  padding: 20px
+}
+
+/* .parent { hay el parent ta3et el position absolute ele t7t
+  width: 500px;
+  height: 250px;
+  background-color: #0F0;
+  position: relative;
+} */
+
+.one {
+  background-color: red;
+  /* position: relative; */ /* byt7ark bno2an 3la nafso bl saf7a kola w ma khso b2y 3onsor tani */
+  /* top: 150px; */
+  /*  left: 150px; */
+
+
+ /*position: absolute; */ /* byt7ark bl saf7a kola bs eza kan b div y3ne elo parents */
+                      /*  byt7ark bon2an 3la div y3ne 3la el parents */
+/*  bottom: 0; */
+/*  right: 0; */
+}
+
+.two {
+  background-color: blue;
+  position: fixed;
+  bottom: 0;
+  right: 200px;
+}
+
+.stick {
+  width: 100%;
+  color: white;
+  background-color: red;
+  position: sticky;
+  top: 0
+}
+
+
+p.fix {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #EEE;
+    position: fixed;
+    top: 40px;
+    left: 280px;
+}

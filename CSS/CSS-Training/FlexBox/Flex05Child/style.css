@@ -1,0 +1,39 @@
+/* 
+
+For Child
+  1. flex-grow: 0; => Default Value [1,2,3,4,.....] {
+    byekbar el 3onsor 4 ad3af el 3anaser mojarad ma la2a msa7a bl width
+  }
+
+  2. flex-shrink: 1; Default Value => [2,3,4,5,......]{
+    byekmesh el 3onsor el moktar beza8ro awal ma yser fe meshkale bl width
+  }
+
+  ==> bl flex-grow bs yekbar el width nykbar el 3onsor el moktar, 
+      w bs yez8ar el width byz8ar el 3onsor el mokhtar 
+  
+  3. order: 0; => Default Value [1,2,3,4,5,6,7,.....]{
+    el order berateb el 3anaser 
+  }
+
+*/
+
+.center {
+  background-color: #eee;
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.center div {
+  background-color: #f00;
+  color: #fff;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+  /* flex-grow: 4; */
+  /* flex-shrink: 70; */
+}

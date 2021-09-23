@@ -1,0 +1,40 @@
+/* 
+  Grid System
+  -Child Items
+    1. grid-area: [Grid Row Start] [Grid Column Start] [Grid Row End] [Grid Column End]
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  width: 800px;
+  background-color: #eee;
+  height: 500px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* gap: 10px 10px; */
+}
+
+.parent div {
+  background-color: #f00;
+  color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.parent .nine {
+  background-color: green;
+  /* grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 5;
+  grid-column-end: 6; */
+  grid-area: 2/2/5/6;
+}

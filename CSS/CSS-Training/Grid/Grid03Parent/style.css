@@ -1,0 +1,39 @@
+/* 
+  Grid System
+  -Parent
+    1. Justify-Content: end | start | center | space-between | space-around | space-evenly
+        / Btt7akm Bl 3anaser Beshakel 3ardey   /
+    2. Align-Content: strech | end | start | center | space-between | space-around | space-evenly
+        / Btt7akm Bl 3anaser Beshakel Toolly  /
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  width: 800px;
+  background-color: #eee;
+  height: 500px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  gap: 10px 10px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.parent div {
+  background-color: #f00;
+  color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}

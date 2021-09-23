@@ -1,0 +1,84 @@
+/* Assign 1 */
+
+/* .go-up {
+  color: black;
+  background-color: #eee;
+  width: 700px;
+  height: 450px;
+  margin: 130px auto;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  transition-delay: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-property: margin-top;
+  transition: margin-top 0.5s ease-out, padding-bottom 0.5s ease-out 0.5s;
+}
+
+.go-up:hover {
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+
+.go-down {
+  color: black;
+  background-color: #ddd;
+  width: 575px;
+  height: 70px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-property: margin-top;
+}
+
+.go-down:hover {
+  margin-top: 100px;
+} */
+
+/* ======================================================================== */
+
+/* Assign 2 */
+
+/* body {
+  position: relative;
+}
+
+div {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 400px !important;
+  font-size: 20px !important;
+  margin: 100px auto;
+  background-color: #f9f9f9 !important;
+  color: #000 !important;
+  border-color: #eee !important;
+}
+
+div::before {
+  content: "ElZero";
+  position: absolute;
+  left: 42vw;
+} */
+
+/* ======================================================================== */
+
+/* Assign 3 */
+
+/* :root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+} */
+
+div {
+  width: 400px;
+  padding: 10px;
+  margin: 40px auto;
+  border: 3px solid var(--mainColor, black);
+  color: var(--mainColor, red);
+}

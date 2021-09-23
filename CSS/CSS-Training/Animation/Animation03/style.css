@@ -1,0 +1,66 @@
+/* 
+  - Animation
+    1. Direction  => default value = normal [reverse,alernate,alernate-revarse] 
+                  -> Etejah el animation y3ne mn wan yebda2
+
+    2. Delay  => 2s 
+              -> adash bdo laybalesh el animation
+
+    3. Fill-mode  => default value = none  [backward,forwards,both]
+                  -> zAY akher animation byekhls byo5d el style aw akher @keyframe ta3o wl3aks sa7e7
+
+    4. Play-State   => default value = running [paused]
+                    -> 7alet el animation ykafe wala ywa2ef
+
+    5. Shorthand => animation:
+                    -> name duration timing-function delay iteration-count direction ;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+  color: #fff;
+  margin: 40px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  /* animation-name: change-color; */
+  /* animation-duration: 6s; */
+  /* animation-direction: reverse; */
+  /* animation-delay: 2s; */
+  /* animation-fill-mode: forwards; */
+  /* animation-play-state: running; */
+  animation: change-color 6s linear 1.4s infinite alternate-reverse;
+}
+
+div:hover {
+  animation-play-state: paused;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: yellow;
+  }
+}

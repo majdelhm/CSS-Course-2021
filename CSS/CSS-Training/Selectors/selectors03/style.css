@@ -1,0 +1,19 @@
+/* 
+  - Selectors
+    . :first-child => awal ebn 3nd aboh
+    . :last-child => akher ebn 3nd aboh
+    . :first-of-type => el awal mn no3o
+    . :last-of-type => el akher mn no3o
+    . :only-child => el eben el wa7ed 3nd aboh la fe ablo wala b3do
+    . :only-of-type => el wa7ed mn no3o w ma behem cho fe ablo aw b3do el mohm ykon wa7ed mn no3o
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent:last-child {
+  color: red;
+}

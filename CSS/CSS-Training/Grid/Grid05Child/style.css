@@ -1,0 +1,53 @@
+/* 
+  Grid System
+  -Child Items
+    1. Grid-Column: [grid-column-start] [grid-column-end]; 
+      /Y3ne mn wan yebda2 el 3onsor w wan yentehe Ex: 1 / 4 or span 3 /
+    2. Grid-Row: [grid-row-start] [grid-row-end];
+      /Y3ne mn wan yebda2 el 3onsor w wan yentehe  Ex: 1 / 3 or span 2/
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  width: 800px;
+  background-color: #eee;
+  height: 500px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  gap: 10px 10px;
+}
+
+.parent div {
+  background-color: #f00;
+  color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.one {
+  grid-column: 1 / 6;
+  grid-row: span 3;
+}
+
+.three {
+  grid-row: span 2;
+}
+
+.five {
+  grid-column: span 2;
+}
+
+.eight {
+  grid-row: span 2;
+}

@@ -1,0 +1,65 @@
+/* 
+  Grid System
+  -Parent
+    1. Grid-Template-Area
+
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  background-color: #eee;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "logo nav nav nav nav nav nav nav"
+    "cont cont cont cont cont side side side"
+    "footer footer footer footer footer footer footer footer";
+}
+:root {
+  --main-Color: #fff;
+}
+
+h2 {
+  grid-area: logo;
+  color: var(--main-Color);
+  background-color: green;
+}
+
+nav {
+  grid-area: nav;
+  color: var(--main-Color);
+  background-color: yellow;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+
+section {
+  grid-area: cont;
+  color: var(--main-Color);
+  background-color: blue;
+}
+
+aside {
+  grid-area: side;
+  color: var(--main-Color);
+  background-color: red;
+}
+
+footer {
+  grid-area: footer;
+  color: var(--main-Color);
+  background-color: black;
+}

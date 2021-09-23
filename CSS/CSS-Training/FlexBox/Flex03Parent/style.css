@@ -1,0 +1,14 @@
+/* 
+  align-items: stretch; => Default Value [flex-start, center, flex-end]
+*/
+
+.center {
+  background-color: #00f;
+  color: #fff;
+  width: 400px;
+  height: 200px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

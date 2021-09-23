@@ -1,0 +1,58 @@
+/* 
+  Flexible Box
+    For Parents
+    1. display: flex; => To Start Flexible Box 
+
+    2. flex-direction: row; => Default Value [row, row-reverse / column, column-reverse]{
+      el direction bymshe m3 etejah el saf7a w eza bde b2lbo bdon ma 2alb el saf7a
+    }
+
+    3. flex-wrap: nowrap; => Default Value [wrap, nowrap, wrap-reverse]{
+      y3ne ay 3onsor zyade 3n masa7et el div nazlo la t7t
+    }
+    #ShortHandCode Of 1,2 => flex-flow: row wrap;
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  /* overflow: hidden;  */
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+}
+
+.flex div {
+  background-color: #f00;
+  color: #fff;
+  /* float: left;  */
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background-color: #f00;
+  color: #fff;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}

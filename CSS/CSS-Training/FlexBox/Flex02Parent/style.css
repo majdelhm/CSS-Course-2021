@@ -1,0 +1,51 @@
+/* 
+  Flexible Box
+    For Parents
+    1. justify-content: flex-start; => Default Value
+      [flex-start, flex-end, center, space-around, space-between, space-evenly]
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  /* overflow: hidden;  */
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.flex div {
+  background-color: #f00;
+  color: #fff;
+  /* float: left;  */
+  width: calc(90% / 3);
+  text-align: center;
+  padding: 20px;
+}
+
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background-color: #f00;
+  color: #fff;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}

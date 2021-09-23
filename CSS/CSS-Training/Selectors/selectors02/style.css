@@ -1,0 +1,22 @@
+/* 
+  - Selectors
+    . Element + Other Element => [div + p] Y3ne p fe abla div directly
+    . Element ~ Other Element => [p ~ div] y3ne p wel direct child ela div
+    . [Attribute] => esem el attribute
+    . Element[Attribute] => esm el element w 3ndo had el attribute
+    . [Attribute=Value] => y3ne attribute w 3ndo hay el value
+    . Element[Attribute=Value] => y3neelement 3ndo had el attribute w 3ndo hay el value
+    . [Attribute~=Value] => Contains A Word 
+    . [Attribute*=Value] => Contains A String
+    . [Attribute^=Value] => Start With A String
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[title^="S0"] {
+  color: red;
+}
